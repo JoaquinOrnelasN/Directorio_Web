@@ -1,0 +1,754 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;   
+    text-decoration: none;     
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Grid */
+#grid__container{
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 54px 380px 21px 160px 42px;    
+    grid-template-areas: 
+    'nav           nav           nav           nav            nav'
+    'portada       portada       portada       portada        portada'
+    'titulo__des   titulo__des   titulo__des   titulo__des    titulo__des'
+    'card__uno     card__dos     card__tres    card__cuatro   card__cinco'
+    'pie           pie           pie           pie            pie';
+}
+
+header{
+    grid-area: nav;    
+}
+    
+.menu{
+    background-color: #e6073f;
+    height: 3.375rem;
+    width: auto;
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: .125rem 0.125rem 0.3125rem; 
+	color: rgb(0, 0, 0);
+	opacity: .9;        
+}
+
+.marca{
+    color: white;
+    font-size: 1.6rem;
+    margin-left: 0.4375rem;       
+}
+
+.menu__items{
+    display: flex;
+    list-style: none;
+    margin-right: 5.625rem;    
+}  
+
+.menu__items li{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.1875rem;
+    padding-bottom: 0.1875rem;
+}
+
+.menu__items li a{
+    padding: 0.4375rem, 0.8125rem;
+    font-size: .9rem;
+    color: white;
+    display: block;
+    text-transform: uppercase;
+}
+
+.logo img{
+    width: 17%;
+    margin-left: 5.625rem;
+    margin-top: 0.5625rem;  
+}
+
+.portada{
+    grid-area: portada;
+    width: 100vw;
+	height: 22.9rem;
+	position: relative;
+	top: 0.5625rem;
+    background-image: url(../imagenes/comida_amigos.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.portada:before{
+    content: '';
+    width: 100vw;
+    height: 100%;
+    background: rgba(90, 90, 90, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.texto__principal{
+    padding-top: 3.9375rem;
+    max-width: 50rem;
+	height: 24.375rem;
+	margin: auto;
+    text-align: center;	
+	position: relative;	
+}
+
+.texto__principal h1{
+	font-size: 2.625rem;
+	font-weight: 500;
+	color: #fff;   
+	margin-bottom: 0.5625rem;
+}
+
+.texto__principal h2{
+	color: #fff;
+	font-size: 1.25rem;
+	font-weight: 300;
+    margin-bottom: 3.9375rem;
+}    
+
+.titulo__des{
+    grid-area: titulo__des;
+    background-color: #4c3f54;      
+}
+
+.titulo__des p{
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+}
+
+.card__uno{
+    grid-area: card__uno;  
+    display: flex;     
+    flex-direction: column; 
+    padding-bottom: 1rem; 
+    background-color: #dfe2d6f1;
+}    
+
+.card__uno img{
+    width: 236px;   
+    height: 120px;    
+    margin-top: .7rem;
+    border: 3px solid #353341;   
+    border-radius: 4%;
+}
+
+.card__uno p{
+    font-size: .86rem;
+    text-align: center;  
+}
+
+.card__dos{
+    grid-area: card__dos;
+    display: flex;     
+    flex-direction: column; 
+    padding-bottom: 1rem;
+    background-color: #d6e2e2f1;
+}
+
+.card__dos img{
+    width: 236px;
+    height: 120px;
+    margin-top: .2rem;    
+    margin-top: .7rem;
+    border: 3px solid #353341;
+    border-radius: 4%;
+}
+
+.card__dos p{
+    font-size: .86rem;
+    text-align: center;  
+}
+
+.card__tres{
+    grid-area: card__tres;
+    display: flex;     
+    flex-direction: column; 
+    padding-bottom: 1rem;
+    background-color: #d6e2e2f1;
+}
+
+.card__tres img{
+    width: 236px;
+    height: 120px;
+    margin-top: .2rem;
+    margin-top: .7rem;   
+    border: 3px solid #353341;   
+    border-radius: 4%;
+}
+
+.card__tres p{
+    font-size: .86rem;
+    text-align: center;
+}
+
+.card__cuatro{
+    grid-area: card__cuatro;
+    display: flex;     
+    flex-direction: column; 
+    padding-bottom: 1rem;
+    background-color: #d6e2e2f1;
+}
+
+.card__cuatro img{
+    width: 236px;
+    height: 120px;
+    margin-top: .2rem;    
+    margin-top: .7rem;  
+    border: 3px solid #353341;  
+    border-radius: 4%;  
+}
+
+.card__cuatro p{
+    font-size: .86rem;
+    text-align: center; 
+}
+
+.card__cinco{
+    grid-area: card__cinco;
+    display: flex;     
+    flex-direction: column; 
+    padding-bottom: 1rem;
+    background-color: #d6e2e2f1;
+}
+
+.card__cinco img{
+    width: 236px;  
+    height: 120px;  
+    margin-top: .2rem;    
+    margin-top: .7rem;     
+    border: 3px solid #353341; 
+    border-radius: 4%;
+}
+
+.card__cinco p{
+    font-size: .86rem;
+    text-align: center;      
+}
+
+footer{
+    grid-area: pie;
+    background-color: #4c3f54;
+    height: auto;    
+    display: flex;
+    align-items: center;
+    flex-direction: row; 
+}
+
+footer p{
+    padding-left: 2rem;    
+    color: white; 
+    font-size: .9rem;         
+} 
+
+footer img{
+    width: 34px;
+    padding-left: 230px;    
+}
+
+/* Sección: ¿Qué es GuíaMe? */
+
+#grid__quees{    
+    display: grid;    
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 3.9375rem 1fr 15rem 5rem 2.625rem;  
+    grid-template-areas:
+    'nav            nav'
+    'seccion        seccion'
+    'seccion__que   img__que'
+    'slogan         slogan'
+    'pie            pie';
+}    
+
+section{
+    grid-area: seccion;
+    background-color: #f0efea;
+    padding-top: 1.9375rem;    
+    width: auto;
+    text-align: center;
+}
+
+/* .título__seccion: Funciona para los títulos de todas las secciones*/
+
+.titulo__seccion{    
+    font-size: 2rem;    
+    padding-bottom: 1.6875rem;
+}
+
+.seccion__que{
+    grid-area: seccion__que;    
+    background-color: #f0efea;
+    display: flex;  
+    flex-direction: row;       
+    width: 100vw;
+    padding-bottom: 1.3rem;     
+}
+
+.seccion__que img{ 
+    grid-area: img__que;          
+    width: 24%;
+    height: 96%;   
+    border-style: solid; color: #4c3f54;
+    border-radius: 4%; 
+    margin-top: .95rem;      
+}
+
+.seccion__que p{
+    text-align: right;
+    margin-right: 2rem; 
+    margin-left: 4.7rem;
+    margin-top: 1.7rem;
+    width: auto;  
+}
+
+.seccion__que p strong{
+    font-size: 1.3rem;
+}
+
+.slogan{
+    grid-area: slogan;
+    font-size: 1.375rem;    
+    padding-top: .5rem;
+    width: auto;
+    background-color: #f0efea;
+    text-align: center;
+}
+
+/*Sección: Negocios destacados*/
+
+.destacados__uno{
+    background-color: #f0efea;
+    display: flex;
+    align-items: center; 
+    padding-top: 30px;
+    padding-bottom: 30px;    
+    border-bottom: solid; color: #fff;
+    border-top: solid; color: #fff;
+}
+
+.destacados__uno img{
+    border-style: solid; color: #000;
+    border-radius: 4%;
+    width: 24%;
+    height: 24%;
+    margin-left: 19px;
+}
+
+.destacados__uno iframe{
+    border-radius: 4%;    
+    max-block-size: 240px;
+    margin-right: 19px     
+}
+
+.destacados__uno p{
+    text-align: center;
+    color: #000;
+}
+
+.destacados__dos{
+    background-color: #f0efea;
+    display: flex;
+    align-items: center; 
+    padding-bottom: 30px;   
+    padding-top: 30px;
+    border-bottom: solid; color: #fff;
+}
+
+.destacados__dos img{
+    border-style: solid; color: #000;
+    border-radius: 4%;
+    width: 24%;
+    height: 24%;
+    margin-left: 19px;    
+}
+
+.destacados__dos iframe{
+    border-radius: 4%;    
+    max-block-size: 240px;
+    margin-right: 19px     
+}
+
+.destacados__dos p{
+    text-align: center;
+    color: #000;
+}
+
+.destacados__tres{
+    background-color: #f0efea;
+    display: flex;
+    align-items: center; 
+    padding-bottom: 30px;   
+    padding-top: 30px;
+    border-bottom: solid; color: #fff;
+}
+
+.destacados__tres img{
+    border-style: solid; color: #000;
+    border-radius: 4%;
+    width: 24%;
+    height: 24%;
+    margin-left: 19px;    
+}
+
+.destacados__tres iframe{
+    border-radius: 4%;    
+    max-block-size: 240px;
+    margin-right: 19px     
+}
+
+.destacados__tres p{
+    text-align: center;
+    color: #000;
+}
+
+.destacados__cuatro{
+    background-color: #f0efea;
+    display: flex;
+    align-items: center; 
+    padding-bottom: 30px;   
+    padding-top: 30px;
+    border-bottom: solid; color: #fff;
+}
+
+.destacados__cuatro img{
+    border-style: solid; color: #000;
+    border-radius: 4%;
+    width: 24%;
+    height: 24%;
+    margin-left: 19px;    
+}
+
+.destacados__cuatro iframe{
+    border-radius: 4%;    
+    max-block-size: 240px;
+    margin-right: 19px     
+}
+
+.destacados__cuatro p{
+    text-align: center;
+    color: #000;
+}
+
+.destacados__cinco{
+    background-color: #f0efea;
+    display: flex;
+    align-items: center; 
+    padding-bottom: 30px;   
+    padding-top: 30px;
+    border-bottom: solid; color: #fff;
+}
+
+.destacados__cinco img{
+    border-style: solid; color: #000;
+    border-radius: 4%;
+    width: 24%;
+    height: 24%;
+    margin-left: 19px;    
+}
+
+.destacados__cinco iframe{
+    border-radius: 4%;    
+    max-block-size: 240px;
+    margin-right: 19px     
+}
+
+.destacados__cinco p{
+    text-align: center;
+    color: #000;
+}    
+
+/* Sección: Anúnciate */
+
+main {
+    background-color: #f0efea;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-top: 40px;
+    padding-right: 240px;
+    padding-left: 240px;    
+}
+
+section h2{
+    text-align: center;
+}
+
+.cont__tarjeta{
+    width: 300px;
+    height: 600px;      
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 4px 10px rgb(0 0 0 / 10%);
+    margin-top: 40px;
+    margin-bottom: 40px;       
+}
+
+.cont__tarjeta__grafico{ 
+    border-radius: 40%;
+}
+
+.cont__tarjeta{
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(80, 80, 80);
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+.cont__tarjeta ul li{
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 39px;
+    margin-right: 13px;
+    margin-bottom: 24px;
+    font-size: 16px;
+}
+
+/* Sección: Contacto */
+
+.container{
+	position: relative;
+	width: auto;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 100px;
+    background-color: #f0efea;
+    padding-bottom: 100px;
+
+}
+
+.contact__box{	
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+.left{
+    size-adjust: 100%;
+    padding: 25px 40px;    
+}
+
+.right{
+	padding: 25px 40px;
+}
+
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 13 30px;
+	font-size: 16px;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: rgb(226, 86, 62);
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.container p{
+    margin-bottom: 16px;
+}    
+
+/* Responsive */
+
+@media (max-width:480px){
+    #grid__container{
+        display: grid;
+        width: 100vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: 108px 370px 21px 160px 160px 160px 160px 160px 40px;
+        grid-gap: 3px;
+        grid-template-areas: 
+        'nav'        
+        'portada'
+        'titulo__des'
+        'card__uno'     
+        'card__dos'     
+        'card__tres'    
+        'card__cuatro'   
+        'card__cinco'
+        'pie'      
+    }
+
+    .menu{
+        height: 108px;
+        width: 1fr;
+        display: flex;
+        flex-direction: column; 
+        padding-left: 100px;                
+    }
+
+    .menu__items li{
+        width: auto;
+        padding-left: 0.2rem;
+        padding-right: 0.6rem;
+        padding-top: 0.1875rem;
+        padding-bottom: 0.1875rem;                   
+    }
+
+    .menu__items li a{
+        padding-bottom: 2.7rem;
+        margin-left: .4rem;
+        font-size: .9rem;         
+    }  
+
+    .marca{
+        color: white;
+        opacity: 0%;
+        font-size: 1.6rem;
+        margin-left: 0.4375rem;
+        margin-right: 3rem;        
+    }
+
+    .logo img{
+        width: 17%;
+        margin-left: 5.025rem;
+        margin-top: 0.5625rem;  
+    }
+
+    .portada{
+        width: 100%;
+        height: 96%;
+    }   
+
+    .portada:before{        
+    width: 100%;
+    height: 100%;
+    background: rgba(90, 90, 90, 0.6);   
+    }       
+
+    .card__uno{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card__dos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card__tres{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card__cuatro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card__cinco{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+           
+    footer p{
+        padding-left: 3rem;
+        font-size: .8rem;              
+    } 
+    
+    footer img{
+        width: 34px;
+        padding-left: 94px;    
+    }
+
+    #grid__quees{    
+        display: grid;    
+        grid-template-columns: 50vw 50vw;
+        grid-template-rows: 3.9375rem 1fr auto auto 5rem 2.625rem;  
+        grid-template-areas:
+        'nav            nav'
+        'seccion        seccion'
+        'seccion__que   seccion__que'
+        'img__que       img__que'
+        'slogan         slogan'
+        'pie            pie';
+    }    
+
+    .titulo__seccion{    
+        font-size: 1.2rem;    
+        padding-bottom: 1rem;
+        padding-top: 2rem;
+    }
+
+    .seccion__que{
+        display: flex;  
+        flex-direction: column-reverse;       
+        width: auto;
+        padding-top: 1rem;
+        padding-bottom: 1.3rem; 
+        padding-left: .7rem;    
+        padding-right: .7rem;
+    }    
+   
+    .seccion__que img{ 
+                 
+        width: 34%;
+        height: 96%;           
+        margin-top: .2rem;  
+        margin-left: 8.3rem;
+    }
+
+    .seccion__que p{
+        text-align: center;              
+        margin-top: .9rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .seccion__que p strong{
+        font-size: .84rem;
+    }
+
+    .slogan{
+        font-size: .93rem;         
+    }
+
+    footer p{
+        padding-left: 3rem;
+        font-size: .8rem;              
+    } 
+    
+    footer img{
+        width: 34px;
+        padding-left: 54px;    
+    }
+    
+}
+
+    

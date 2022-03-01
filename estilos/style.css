@@ -66,6 +66,11 @@ header{
     text-transform: uppercase;
 }
 
+.menu__items li:hover, li:active{
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 0.25rem;
+}
+
 .logo img{
     width: 17%;
     margin-left: 5.625rem;
@@ -144,6 +149,10 @@ header{
     border-radius: 4%;
 }
 
+.card__uno img:hover{
+    border: 3px solid #e6073f;         
+}
+
 .card__uno p{
     font-size: .86rem;
     text-align: center;  
@@ -164,6 +173,10 @@ header{
     margin-top: .7rem;
     border: 3px solid #353341;
     border-radius: 4%;
+}
+
+.card__dos img:hover{
+    border: 3px solid #e6073f;         
 }
 
 .card__dos p{
@@ -188,6 +201,10 @@ header{
     border-radius: 4%;
 }
 
+.card__tres img:hover{
+    border: 3px solid #e6073f;         
+}
+
 .card__tres p{
     font-size: .86rem;
     text-align: center;
@@ -210,6 +227,10 @@ header{
     border-radius: 4%;  
 }
 
+.card__cuatro img:hover{
+    border: 3px solid #e6073f;         
+}
+
 .card__cuatro p{
     font-size: .86rem;
     text-align: center; 
@@ -230,6 +251,10 @@ header{
     margin-top: .7rem;     
     border: 3px solid #353341; 
     border-radius: 4%;
+}
+
+.card__cinco img:hover{
+    border: 3px solid #e6073f;         
 }
 
 .card__cinco p{
@@ -573,6 +598,10 @@ textarea{
 	outline: none;
 	cursor: pointer;
 	transition: .3s;
+}
+
+.btn:hover{
+    background-color: crimson;
 }
 
 .container p{

@@ -1,40 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../imagenes/logomapa.png" type="image/x-icon">
-    <link rel="stylesheet" href="../estilos/style.css">
-    <title>GuíaMe | Directorio web</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="../estilos/style.css">
+        <title>Bootstrap</title>
+    </head>
 
 <body>
     <!--Barra de navegación-->
     <header>
-        <nav class="menu">
-            <div class="logo">
-                <img src="../imagenes/logomapa.png" alt="logo">
-                <label class="marca">GuíaMe</label>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <img src="../imagenes/logomapa.png" style="width: 4%; margin-right: 9px">
+                <a class="navbar-brand" href="./index.html">GuíaMe</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./quees.html">¿Qué es Guíame?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./explora.html">Explora</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./anunciate.html">Anúnciate</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <ul class="menu__items">
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="quees.html">¿Qué es GuíaMe?</a>
-                </li>
-                <li>
-                    <a href="explora.html">Explora</a>
-                </li>
-                <li>
-                    <a href="anunciate.html">Anúnciate</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
         </nav>
     </header>
     <section>
@@ -42,9 +51,7 @@
             <h1>Negocios destacados</h1>
         </div>
     </section>
-
     <div class="destacados__uno">
-
         <img src="../imagenes/paleteria.jpg" alt="paletas de hielo">
         <p><strong>Paletería La Michoacana</strong><br><br>
             <b>Especialidad:</b> Paletas de frutas naturales y aguas frescas.<br>
@@ -57,7 +64,6 @@
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1908.9404840985733!2d-103.42734782704812!3d20.634502284663068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ac4014b82481%3A0x78ec1fb5eb0c0359!2sPaleteria%20la%20michoacana!5e0!3m2!1ses!2smx!4v1643677344507!5m2!1ses!2smx"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
-
     <div class="destacados__dos">
         <img src="../imagenes/ferreteria.jpg" alt="herramientas">
         <p><strong>Ferretería Uribe</strong><br><br>
@@ -71,7 +77,6 @@
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1866.9246582410206!2d-103.42793066699411!3d20.634997896396378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ac4014803cfb%3A0x7acd8c79b569d265!2sFerreter%C3%ADa%20Uribe!5e0!3m2!1ses!2smx!4v1643678453240!5m2!1ses!2smx"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
-
     <div class="destacados__tres">
         <img src="../imagenes/ropa.jpg" alt="tienda de ropa">
         <p><strong>Ropa y accesorios Carmin</strong><br><br>
@@ -85,7 +90,6 @@
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1044.3792899338555!2d-103.42751902187895!3d20.636118085034386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ac400b76f805%3A0x64d6d2fc5f423ef3!2sRopa%20y%20accesorios%20Carmin!5e0!3m2!1ses!2smx!4v1643678653991!5m2!1ses!2smx"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
-
     <div class="destacados__cuatro">
         <img src="../imagenes/dentista.jpg" alt="consultorio dental">
         <p><strong>Consultorio dental de la UNAM</strong><br><br>
@@ -113,11 +117,29 @@
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1989.7894632102734!2d-103.42940168923273!3d20.640849682168167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ade3584f9029%3A0x93b40ed03de298!2sHatzza%20Pizza%20%26%20Pasta!5e0!3m2!1ses!2smx!4v1643679041276!5m2!1ses!2smx"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
-    <footer>
-        <p>Copyright ©2022</p>        
-        <a href="http://facebook.com"><img src="../imagenes/iconofb1.png" alt="facebook"></a>
-        <a href="http://instagram.com"><img src="../imagenes/iconoinstagram1.png" alt="instagram"></a>
-        <a href="http://youtube.com"><img src="../imagenes/iconoyoutube1.png" alt="youtube"></a>
-    </footer> 
+    <div class="b-example-divider"></div>
+    <div class="container__pie">
+        <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <span class="text-light"> Copyright &copy; 2022 </span>
+            </div>
+            <ul class="nav col-md-4 justify-content-between list-unstyled d-flex">
+                <li><i class="bi bi-facebook red__social"></i></li>
+                <li><i class="bi bi-instagram red__social"></i></li>
+                <li><i class="bi bi-youtube red__social"></i></li>
+            </ul>
+        </footer>
+    </div>
+</div>
+    <!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+</script>
 </body>
 </html>

@@ -31,11 +31,7 @@
     font-size: 14px;
 }
 
-
-
-
-.portada{
-    grid-area: portada;
+.portada{    
     width: auto;
 	height: 24.2rem;
 	position: relative;
@@ -79,8 +75,7 @@
     margin-bottom: 3.9375rem;
 }    
 
-.titulo__des{
-    grid-area: titulo__des;
+.titulo__des{    
     background-color: #4c3f54;
     margin-top: 13px;     
 }
@@ -126,8 +121,7 @@
 .b-example-divider {
     height: 1rem;
     background-color: #fff;
-    border-width: 1px 0;
-    
+    border-width: 1px 0;    
 }
 
 .b-example-divider .container{
@@ -153,8 +147,7 @@
 
 /* Sección: ¿Qué es GuíaMe? */
 
-section{
-    grid-area: seccion;
+section{    
     padding-top: 1.9375rem;  
     padding-bottom: 2rem;  
     width: auto;
@@ -186,17 +179,15 @@ section{
 /*Sección: Negocios destacados*/
 
 .destacados__uno{
-    background-color: #f0efea;
     display: flex;
     align-items: center; 
     padding-top: 30px;
     padding-bottom: 30px;    
-    border-bottom: solid; color: #fff;
-    border-top: solid; color: #fff;
+    border-top: solid; color: #e6073f;
 }
 
 .destacados__uno img{
-    border-style: solid; color: #000;
+    border-style: solid; color: #4c3f54;
     border-radius: 4%;
     width: 24%;
     height: 24%;
@@ -215,16 +206,15 @@ section{
 }
 
 .destacados__dos{
-    background-color: #f0efea;
     display: flex;
     align-items: center; 
-    padding-bottom: 30px;   
     padding-top: 30px;
-    border-bottom: solid; color: #fff;
+    padding-bottom: 30px;    
+    border-top: solid; color: #e6073f;
 }
 
 .destacados__dos img{
-    border-style: solid; color: #000;
+    border-style: solid; color: #4c3f54;
     border-radius: 4%;
     width: 24%;
     height: 24%;
@@ -243,12 +233,11 @@ section{
 }
 
 .destacados__tres{
-    background-color: #f0efea;
     display: flex;
     align-items: center; 
-    padding-bottom: 30px;   
     padding-top: 30px;
-    border-bottom: solid; color: #fff;
+    padding-bottom: 30px;    
+    border-top: solid; color: #e6073f;
 }
 
 .destacados__tres img{
@@ -271,16 +260,15 @@ section{
 }
 
 .destacados__cuatro{
-    background-color: #f0efea;
     display: flex;
     align-items: center; 
-    padding-bottom: 30px;   
     padding-top: 30px;
-    border-bottom: solid; color: #fff;
+    padding-bottom: 30px;    
+    border-top: solid; color: #e6073f;
 }
 
 .destacados__cuatro img{
-    border-style: solid; color: #000;
+    border-style: solid; color: #4c3f54;
     border-radius: 4%;
     width: 24%;
     height: 24%;
@@ -299,16 +287,16 @@ section{
 }
 
 .destacados__cinco{
-    background-color: #f0efea;
     display: flex;
     align-items: center; 
-    padding-bottom: 30px;   
     padding-top: 30px;
-    border-bottom: solid; color: #fff;
+    padding-bottom: 30px;    
+    border-top: solid; color: #e6073f;
+    border-bottom: solid; color: #e6073f;
 }
 
 .destacados__cinco img{
-    border-style: solid; color: #000;
+    border-style: solid; color: #4c3f54;
     border-radius: 4%;
     width: 24%;
     height: 24%;
@@ -328,17 +316,6 @@ section{
 
 /* Sección: Anúnciate */
 
-main {
-    background-color: #f0efea;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    padding-top: 40px;
-    padding-right: 240px;
-    padding-left: 240px;    
-}
-
 section h2{
     text-align: center;
 }
@@ -347,22 +324,19 @@ section h2{
     width: 300px;
     height: 600px;      
     border-radius: 20px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 4px 4px 10px rgb(0 0 0 / 10%);
-    margin-top: 40px;
-    margin-bottom: 40px;       
-}
-
-.cont__tarjeta__grafico{ 
-    border-radius: 40%;
-}
-
-.cont__tarjeta{
+    background-color: #ffffff;
+    box-shadow: 4px 4px 10px rgba(20, 16, 16, 0.548);
+    margin-bottom: 40px;
+    margin-left: 170px;
     text-align: center;
     margin-top: 10px;
     color: rgb(80, 80, 80);
     font-weight: bolder;
-    font-size: 22px;
+    font-size: 22px;          
+}
+
+.cont__tarjeta__grafico{ 
+    border-radius: 40%;
 }
 
 .cont__tarjeta ul li{
@@ -371,12 +345,12 @@ section h2{
     margin-left: 39px;
     margin-right: 13px;
     margin-bottom: 24px;
-    font-size: 16px;
+    font-size: 14px;
 } 
 
 /* Sección: Contacto */
-/*
-.container{
+
+.container__contacto{
 	position: relative;
 	width: auto;
 	height: auto;
@@ -384,9 +358,7 @@ section h2{
 	justify-content: center;
 	align-items: center;
 	padding: 20px 100px;
-    background-color: #f0efea;
     padding-bottom: 100px;
-
 }
 
 .contact__box{	
@@ -437,181 +409,7 @@ textarea{
     background-color: crimson;
 }
 
-.container p{
+.container__contacto p{
     margin-bottom: 16px;
-}   */ 
+}   
 
-/* Responsive */
-/*
-@media (max-width:480px){
-    #grid__container{
-        display: grid;
-        width: 100vw;
-        grid-template-columns: 1fr;
-        grid-template-rows: 108px 370px 21px 160px 160px 160px 160px 160px 40px;
-        grid-gap: 3px;
-        grid-template-areas: 
-        'nav'        
-        'portada'
-        'titulo__des'
-        'card__uno'     
-        'card__dos'     
-        'card__tres'    
-        'card__cuatro'   
-        'card__cinco'
-        'pie'      
-    }
-
-    .menu{
-        height: 108px;
-        width: 1fr;
-        display: flex;
-        flex-direction: column; 
-        padding-left: 100px;                
-    }
-
-    .menu__items li{
-        width: auto;
-        padding-left: 0.2rem;
-        padding-right: 0.6rem;
-        padding-top: 0.1875rem;
-        padding-bottom: 0.1875rem;                   
-    }
-
-    .menu__items li a{
-        padding-bottom: 2.7rem;
-        margin-left: .4rem;
-        font-size: .9rem;         
-    }  
-
-    .marca{
-        color: white;
-        opacity: 0%;
-        font-size: 1.6rem;
-        margin-left: 0.4375rem;
-        margin-right: 3rem;        
-    }
-
-    .logo img{
-        width: 17%;
-        margin-left: 5.025rem;
-        margin-top: 0.5625rem;  
-    }
-
-    .portada{
-        width: 100%;
-        height: 96%;
-    }   
-
-    .portada:before{        
-    width: 100%;
-    height: 100%;
-    background: rgba(90, 90, 90, 0.6);   
-    }       
-
-    .card__uno{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card__dos{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card__tres{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card__cuatro{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card__cinco{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-           
-    footer p{
-        padding-left: 3rem;
-        font-size: .8rem;              
-    } 
-    
-    footer img{
-        width: 34px;
-        padding-left: 94px;    
-    }
-
-    #grid__quees{    
-        display: grid;    
-        grid-template-columns: 50vw 50vw;
-        grid-template-rows: 3.9375rem 1fr auto auto 5rem 2.625rem;  
-        grid-template-areas:
-        'nav            nav'
-        'seccion        seccion'
-        'seccion__que   seccion__que'
-        'img__que       img__que'
-        'slogan         slogan'
-        'pie            pie';
-    }    
-
-    .titulo__seccion{    
-        font-size: 1.2rem;    
-        padding-bottom: 1rem;
-        padding-top: 2rem;
-    }
-
-    .seccion__que{
-        display: flex;  
-        flex-direction: column-reverse;       
-        width: auto;
-        padding-top: 1rem;
-        padding-bottom: 1.3rem; 
-        padding-left: .7rem;    
-        padding-right: .7rem;
-    }    
-   
-    .seccion__que img{ 
-                 
-        width: 34%;
-        height: 96%;           
-        margin-top: .2rem;  
-        margin-left: 8.3rem;
-    }
-
-    .seccion__que p{
-        text-align: center;              
-        margin-top: .9rem;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .seccion__que p strong{
-        font-size: .84rem;
-    }
-
-    .slogan{
-        font-size: .93rem;         
-    }
-
-    footer p{
-        padding-left: 3rem;
-        font-size: .8rem;              
-    } 
-    
-    footer img{
-        width: 34px;
-        padding-left: 54px;    
-    }
-    
-} */
-
-
-    

@@ -1,99 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./estilos/style.css">
-    <title>Grid - Responsive</title>
+    <title>Bootstrap</title>
 </head>
-<body id="grid__container">
-    <header>
-        <nav class="menu">
-            <div class="logo">
-                <img src="./imagenes/logomapa.png" alt="logo">
-                <label class="marca">GuíaMe</label>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <img src="./imagenes/logomapa.png" style="width: 4%; margin-right: 9px">
+            <a class="navbar-brand" href="./index.html">GuíaMe</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./secciones/quees.html">¿Qué es Guíame?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./secciones/explora.html">Explora</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./secciones/anunciate.html">Anúnciate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./secciones/contacto.html">Contacto</a>
+                    </li>
+                </ul>
             </div>
-            <ul class="menu__items">
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./secciones/quees.html">¿Qué es GuíaMe?</a>
-                </li>
-                <li>
-                    <a href="./secciones/explora.html">Explora</a>
-                </li>
-                <li>
-                    <a href="./secciones/anunciate.html">Anúnciate</a>
-                </li>
-                <li>
-                    <a href="./secciones/contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <div class="portada">
-        <div class="texto__principal">
-            <h1>¡Redescubre tu colonia!</h1>
-            <h2><strong>Conoce los negocios que están cerca de ti.</strong></h2>
-            <div class="search">
-                <form>
-                    <select name="colonias">
-                        <option>Seleccionar colonia</option>
-                        <option value="1">Todas</option>
-                        <option value="2">Arboledas</option>
-                        <option value="3">Bugambilias</option>
-                        <option value="4">Chapalita</option>
-                        <option value="5">Ciudad Granja</option>
-                        <option value="6">El Fortín</option>
-                        <option value="7">Paseos del Sol</option>
-                    </select>
-                    <input type="search" name="palabra_clave" placeholder="Palabra clave..." />
-                    <input type="submit" value="Buscar" />
-                </form>
+        </div>
+    </nav>
+</header>
+<!-- Portada -->
+<div class="portada">
+    <div class="texto__principal">
+        <h1>¡Redescubre tu colonia!</h1>
+        <h2><strong>Conoce los negocios que están cerca de ti.</strong></h2>
+        <div class="search">
+            <div class="container__form">
+                <div class="row">
+                    <div class="search col-sm-12 col-sm-12 col-lg-12">
+                        <form>
+                            <select name="colonias">
+                                <option selected>Seleccionar colonia</option>
+                                <option value="1">Todas</option>
+                                <option value="2">Arboledas</option>
+                                <option value="3">Bugambilias</option>
+                                <option value="4">Chapalita</option>
+                                <option value="5">Ciudad Granja</option>
+                                <option value="6">El Fortín</option>
+                                <option value="7">Paseos del Sol</option>
+                            </select>
+                            <input type="search" name="palabra_clave" placeholder="Palabra clave..." />
+                            <input type="submit" value="Buscar" />
+                        </form>
+                    </div>                    
+                </div>
             </div>
         </div>
     </div>
     <div class="titulo__des">
         <p>Negocios destacados</p>
-    </div>   
-        <div class="card__uno">
-            <a href="./secciones/explora.html"><img src="./imagenes/ropa.jpg" alt="tienda de ropa"></a>
-            <div class="card__title">
-                <p><a href="./secciones/explora.html">Ropa y accesorios Carmin</a></p>
+    </div>
+    <div class="container">
+        <div class="row  d-flex justify-content-around">
+            <div class="card col-sm-12 col-md-6 col-lg-2">
+                <img src="./imagenes/ropa.jpg" class="card-img-top" alt="Tienda de ropa">
+                <div class="card-body d-flex align-content-between flex-wrap">
+                    <h5 class="card-title">Ropa y accesorios Carmin</h5>
+                    <a href="#" class="btn btn-danger">
+                        <p>Más información</p>
+                    </a>
+                </div>
+            </div>
+            <div class="card col-sm-12 col-md-6 col-lg-2">
+                <img src="./imagenes/paleteria.jpg" class="card-img-top" alt="Paletas de hielo">
+                <div class="card-body d-flex align-content-between flex-wrap">
+                    <h5 class="card-title">Paletería La Michoacana</h5>
+                    <a href="#" class="btn btn-danger">
+                        <p>Más información</p>
+                    </a>
+                </div>
+            </div>
+            <div class="card col-sm-12 col-md-6 col-lg-2">
+                <img src="./imagenes/ferreteria.jpg" class="card-img-top" alt="Herramientas">
+                <div class="card-body d-flex align-content-between flex-wrap">
+                    <h5 class="card-title">Ferretería Uribe</h5>
+                    <a href="#" class="btn btn-danger">
+                        <p>Más información</p>
+                    </a>
+                </div>
+            </div>
+            <div class="card col-sm-12 col-md-6 col-lg-2">
+                <img src="./imagenes/dentista.jpg" class="card-img-top" alt="Consultorio dental">
+                <div class="card-body d-flex align-content-between flex-wrap">
+                    <h5 class="card-title">Consultorio dental de la UNAM</h5>
+                    <a href="#" class="btn btn-danger">
+                        <p>Más información</p>
+                    </a>
+                </div>
+            </div>
+            <div class="card col-sm-12 col-md-6 col-lg-2">
+                <img src="./imagenes/comida.jpg" class="card-img-top" alt="Restaurante italiano">
+                <div class="card-body d-flex align-content-between flex-wrap">
+                    <h5 class="card-title">Restaurante Hatzza Pizza & Pasta</h5>
+                    <a href="#" class="btn btn-danger">
+                        <p>Más información</p>
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="card__dos">
-            <a href="./secciones/explora.html"><img src="./imagenes/paleteria.jpg" alt="Paletas de hielo"></a>
-            <div class="card__title">
-                <p><a href="./secciones/explora.html">Paletería La Michoacana</a></p>
-            </div>
-        </div>   
-        <div class="card__tres">
-            <a href="./secciones/explora.html"><img src="./imagenes/ferreteria.jpg" alt="Ferretería"></a>
-            <div class="card__title">
-                <p><a href="./secciones/explora.html">Ferretería Uribe</a></p>
-            </div>
-        </div>    
-        <div class="card__cuatro">
-            <a href="./secciones/explora.html"><img src="./imagenes/dentista.jpg" alt="Consultorio dental"></a>
-            <div class="card__title">
-                <p><a href="./secciones/explora.html">Consultorio dental de la UNAM</a></p>
-            </div>
-        </div>    
-        <div class="card__cinco">
-            <a href="./secciones/explora.html"><img src="./imagenes/comida.jpg" alt="Restaurante italiano"></a>
-            <div class="card__title">
-                <p><a href="./secciones/explora.html">Restaurante Hatzza Pizza & Pasta</a></p>
-            </div> 
-        </div>     
     </div>
-    <footer>
-        <p>Copyright ©2022</p>        
-        <a href="http://facebook.com"><img src="./imagenes/iconofb1.png" alt="facebook"></a>
-        <a href="http://instagram.com"><img src="./imagenes/iconoinstagram1.png" alt="instagram"></a>
-        <a href="http://youtube.com"><img src="./imagenes/iconoyoutube1.png" alt="youtube"></a>
-    </footer>    
-</body>
+    <div class="b-example-divider"></div>
+    <div class="container__pie">
+        <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <span class="text-light"> Copyright &copy; 2022 </span>
+            </div>
+            <ul class="nav col-md-4 justify-content-between list-unstyled d-flex">
+                <li><i class="bi bi-facebook red__social"></i></li>
+                <li><i class="bi bi-instagram red__social"></i></li>
+                <li><i class="bi bi-youtube red__social"></i></li>
+            </ul>
+        </footer>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    </body>
 </html>

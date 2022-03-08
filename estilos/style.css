@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
 
 *{
     margin: 0;
@@ -20,7 +20,9 @@
 }
 
 .navbar-brand {
-    font-size: 27px;
+    font-size: 36px;
+    font-family: 'Yesteryear', sans-serif; 
+    padding-left: 7px;   
 }
 
 .navbar .nav-item .nav-link{
@@ -102,32 +104,35 @@
     text-align: center;    
 }
 
-.card a{
-    width: 130px;
-    height: 24px;
-    display: flex;
-    align-content: center;
-    background-color: #e6073f;   
+.btn__info{
+	width: 116px;
+    height: 31px;
+	background-color: #e6073f;
+	color: #fff;
+	font-size: .8rem;   	
+	cursor: pointer;
+    border: none;	    
 }
 
-.card a p{
-    font-size: 11px;
-}  
-
-.btn{
-    border: #e6073f;
+.btn__info:hover{
+    background-color: #4c3f54;
+    transition: .3s;
 }
 
-.b-example-divider {
-    height: 1rem;
-    background-color: #fff;
-    border-width: 1px 0;    
-}
-
-.b-example-divider .container{
+.btn__search{
+    height: 36px;
+    border: 0.125rem solid #f1d7d7;
+    border-radius: 4%;
     background-color: #e6073f;
+    color: #ffffff;
 }
-  
+
+.btn__search:hover{
+    background-color: #4c3f54;
+    border-color: #f1d7d7;
+    transition: .3s;
+}
+
 .bi {
     vertical-align: -.125em;
     fill: currentColor;
@@ -152,28 +157,43 @@ section{
     padding-bottom: 2rem;  
     width: auto;
     text-align: center;
+    background-color: #f0efea;
 }
 
 /* .título__seccion: Funciona para los títulos de todas las secciones*/
 
-.titulo__seccion{    
-    font-size: 2rem;    
+.titulo__seccion h1{  
+    font-family:'Yesteryear', sans-serif; 
+    font-size: 3.9rem;  
+    color: #4c3f54;  
     padding-bottom: 1.6875rem;
+    background-color: #f0efea;
+}
+
+.container__anuncio{
+    background-color: #f0efea;
+}
+
+.container__quees{
+    background-color: #f0efea;
 }
 
 .quees__dos p{
-    text-align: right;
+    text-align: center;
     padding-right: 36px;
+    background-color: #f0efea;
 }
 
 .quees__dos img{
     width: 310px;
-    border-style: groove;      
+    border-style: groove; 
+    background-color: #f0efea;     
 }
 
 .slogan{
     text-align: center;    
     margin-top: 3rem;
+    background-color: #f0efea;
 }
 
 /*Sección: Negocios destacados*/
@@ -184,6 +204,7 @@ section{
     padding-top: 30px;
     padding-bottom: 30px;    
     border-top: solid; color: #e6073f;
+    background-color: #f0efea;
 }
 
 .destacados__uno img{
@@ -211,6 +232,7 @@ section{
     padding-top: 30px;
     padding-bottom: 30px;    
     border-top: solid; color: #e6073f;
+    background-color: #f0efea;
 }
 
 .destacados__dos img{
@@ -238,6 +260,7 @@ section{
     padding-top: 30px;
     padding-bottom: 30px;    
     border-top: solid; color: #e6073f;
+    background-color: #f0efea;
 }
 
 .destacados__tres img{
@@ -265,6 +288,7 @@ section{
     padding-top: 30px;
     padding-bottom: 30px;    
     border-top: solid; color: #e6073f;
+    background-color: #f0efea;
 }
 
 .destacados__cuatro img{
@@ -293,6 +317,7 @@ section{
     padding-bottom: 30px;    
     border-top: solid; color: #e6073f;
     border-bottom: solid; color: #e6073f;
+    background-color: #f0efea;
 }
 
 .destacados__cinco img{
@@ -359,13 +384,14 @@ section h2{
 	align-items: center;
 	padding: 20px 100px;
     padding-bottom: 100px;
+    background-color: #f0efea;
 }
 
 .contact__box{	
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	background-color: rgb(255, 255, 255);
+	background-color: #ffffff;
 	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
 }
 
@@ -396,8 +422,8 @@ textarea{
 .btn{
 	width: 100%;
 	padding: 0.5rem 1rem;
-	background-color: rgb(226, 86, 62);
-	color: #fff;
+	background-color: #e6073f;
+	color: #ffffff;
 	font-size: 1.1rem;
 	border: none;
 	outline: none;
@@ -406,10 +432,68 @@ textarea{
 }
 
 .btn:hover{
-    background-color: crimson;
+    background-color: #4c3f54;
+    color: #ffffff;
 }
 
 .container__contacto p{
     margin-bottom: 16px;
 }   
+
+.row {   
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+@media (max-width: 992px){   
+    .quees__dos{
+        display: flex;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px){
+    footer{
+        display: flex;
+        flex-direction: column-reverse;               
+    }  
+    .destacados__uno{
+        display: flex;
+        flex-direction: column;        
+    }
+    .destacados__uno img{
+        width: 70vw;
+    }
+    .destacados__dos{
+        display: flex;
+        flex-direction: column;        
+    }
+    .destacados__dos img{
+        width: 70vw;
+    }
+    .destacados__tres{
+        display: flex;
+        flex-direction: column;        
+    }
+    .destacados__tres img{
+        width: 70vw;
+    }
+    .destacados__cuatro{
+        display: flex;
+        flex-direction: column;        
+    }
+    .destacados__cuatro img{
+        width: 70vw;
+    }
+    .destacados__cinco{
+        display: flex;
+        flex-direction: column;        
+    }
+    .destacados__cinco img{
+        width: 70vw;
+    }
+}    
+
+
+
 

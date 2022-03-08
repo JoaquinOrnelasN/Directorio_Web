@@ -51,22 +51,28 @@
         <div class="search">
             <div class="container__form">
                 <div class="row">
-                    <div class="search col-sm-12 col-sm-12 col-lg-12">
-                        <form>
-                            <select name="colonias">
+                    <div class="col-md-4">
+                        <div class="container__search">
+                            <select class="custom-select">
                                 <option selected>Seleccionar colonia</option>
                                 <option value="1">Todas</option>
-                                <option value="2">Arboledas</option>
-                                <option value="3">Bugambilias</option>
-                                <option value="4">Chapalita</option>
-                                <option value="5">Ciudad Granja</option>
-                                <option value="6">El Fortín</option>
-                                <option value="7">Paseos del Sol</option>
+                                <option value="6">Arboledas</option>
+                                <option value="7">Bugambilias</option>                                
+                                <option value="4">Cd. Granja</option>
+                                <option value="5">Chapalita</option>
+                                <option value="3">El Fortín</option>                                
+                                <option value="2">Paseos del Sol</option>
                             </select>
-                            <input type="search" name="palabra_clave" placeholder="Palabra clave..." />
-                            <input type="submit" value="Buscar" />
-                        </form>
-                    </div>                    
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control form-control-md" placeholder="Palabra clave...">
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn__search btn-block">
+                            Buscar
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -76,49 +82,49 @@
     </div>
     <div class="container">
         <div class="row  d-flex justify-content-around">
-            <div class="card col-sm-12 col-md-6 col-lg-2">
+            <div class="card col-sm-6 col-md-4 col-lg-2">
                 <img src="./imagenes/ropa.jpg" class="card-img-top" alt="Tienda de ropa">
                 <div class="card-body d-flex align-content-between flex-wrap">
                     <h5 class="card-title">Ropa y accesorios Carmin</h5>
-                    <a href="#" class="btn btn-danger">
-                        <p>Más información</p>
-                    </a>
+                    <form action="./secciones/explora.html">                                         
+                        <button class="btn__info">+ información</button>
+                    </form>                     
                 </div>
             </div>
-            <div class="card col-sm-12 col-md-6 col-lg-2">
+            <div class="card col-sm-6 col-md-4 col-lg-2">
                 <img src="./imagenes/paleteria.jpg" class="card-img-top" alt="Paletas de hielo">
                 <div class="card-body d-flex align-content-between flex-wrap">
                     <h5 class="card-title">Paletería La Michoacana</h5>
-                    <a href="#" class="btn btn-danger">
-                        <p>Más información</p>
-                    </a>
+                    <form action="./secciones/explora.html">                                         
+                        <button class="btn__info">+ información</button>
+                    </form> 
                 </div>
             </div>
-            <div class="card col-sm-12 col-md-6 col-lg-2">
+            <div class="card col-sm-6 col-md-4 col-lg-2">
                 <img src="./imagenes/ferreteria.jpg" class="card-img-top" alt="Herramientas">
                 <div class="card-body d-flex align-content-between flex-wrap">
                     <h5 class="card-title">Ferretería Uribe</h5>
-                    <a href="#" class="btn btn-danger">
-                        <p>Más información</p>
-                    </a>
+                    <form action="./secciones/explora.html">                                         
+                        <button class="btn__info">+ información</button>
+                    </form>    
                 </div>
             </div>
-            <div class="card col-sm-12 col-md-6 col-lg-2">
+            <div class="card col-sm-6 col-md-4 col-lg-2">
                 <img src="./imagenes/dentista.jpg" class="card-img-top" alt="Consultorio dental">
                 <div class="card-body d-flex align-content-between flex-wrap">
                     <h5 class="card-title">Consultorio dental de la UNAM</h5>
-                    <a href="#" class="btn btn-danger">
-                        <p>Más información</p>
-                    </a>
+                    <form action="./secciones/explora.html">                                         
+                        <button class="btn__info">+ información</button>
+                    </form> 
                 </div>
             </div>
-            <div class="card col-sm-12 col-md-6 col-lg-2">
+            <div class="card col-sm-6 col-md-4 col-lg-2">
                 <img src="./imagenes/comida.jpg" class="card-img-top" alt="Restaurante italiano">
                 <div class="card-body d-flex align-content-between flex-wrap">
                     <h5 class="card-title">Restaurante Hatzza Pizza & Pasta</h5>
-                    <a href="#" class="btn btn-danger">
-                        <p>Más información</p>
-                    </a>
+                    <form action="./secciones/explora.html">                                         
+                        <button class="btn__info">+ información</button>
+                    </form> 
                 </div>
             </div>
         </div>
@@ -130,9 +136,9 @@
                 <span class="text-light"> Copyright &copy; 2022 </span>
             </div>
             <ul class="nav col-md-4 justify-content-between list-unstyled d-flex">
-                <li><i class="bi bi-facebook red__social"></i></li>
-                <li><i class="bi bi-instagram red__social"></i></li>
-                <li><i class="bi bi-youtube red__social"></i></li>
+                <li><a href="http://facebook.com"><i class="bi bi-facebook red__social"></i></a></li>
+                <li><a href="http://instagram.com"><i class="bi bi-instagram red__social"></i></a></li>
+                <li><a href="http://youtube.com"><i class="bi bi-youtube red__social"></i></a></li>
             </ul>
         </footer>
     </div>

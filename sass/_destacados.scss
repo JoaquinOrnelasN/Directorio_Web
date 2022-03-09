@@ -1,0 +1,27 @@
+.card{
+    height: 16rem;  
+    border: 3px solid #4c3f54;
+     img{
+        width: auto;
+        height: 120px;
+        padding-top: 9px;    
+    }
+     h5{
+        font-size: 16px;
+        text-align: center;     
+     }
+     .btn__info{
+        width: 116px;
+        height: 31px;
+        background-color: #e6073f;
+        color: #fff;
+        font-size: .8rem;   	
+        cursor: pointer;
+        border: none;
+        &:hover{
+            background-color: #4c3f54;
+            transition: .3s;
+        }	    
+    }
+
+}

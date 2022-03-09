@@ -1,0 +1,38 @@
+.portada{    
+    width: auto;
+	height: 24.2rem;
+	position: relative;
+	top: 0.5625rem;
+    background-image: url(../imagenes/comida_amigos.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+     &:before{
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: rgba(90, 90, 90, 0.6);
+        position: absolute;
+        top: 0;
+        left: 0;}
+         .texto__principal{
+            padding-top: 3.9375rem;
+            max-width: 50rem;
+            height: 24.375rem;
+            margin: auto;
+            text-align: center;	
+            position: relative;	
+             h1{
+                font-size: 2.625rem;
+                font-weight: 500;
+                color: #fff;   
+                margin-bottom: 0.5625rem;
+            }
+             h2{
+                color: #fff;
+                font-size: 1.25rem;
+                font-weight: 300;
+                margin-bottom: 3.9375rem;
+        }
+    }
+}

@@ -1,3 +1,16 @@
-$colorPrincipal: #e6073f;
-$colorSecundario: #4c3f54;
 $fuenteTitulos: 'Yesteryear', sans-serif;
+$fuenteGeneral: 'Open Sans', sans-serif;
+
+
+// Mapa
+$colores:(
+    principal: #e6073f,
+    secundario: #4c3f54,
+    fondo: #f0efea
+);
+
+// Extend
+.boton{
+    background-color: map-get($colores, principal);
+    color: #ffffff;
+}    

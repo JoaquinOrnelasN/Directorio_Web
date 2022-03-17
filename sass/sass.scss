@@ -8,11 +8,11 @@
     margin: 0;
     padding: 0;   
     text-decoration: none;     
-    font-family: 'Open Sans', sans-serif;
+    font-family: $fuenteGeneral;
 }
 
 .titulo__des{    
-    background-color: $colorSecundario;
+    background-color: map-get($colores, secundario);
     margin-top: 13px;     
 }
 
@@ -23,15 +23,14 @@
 }
 
 .btn__search{
+    @extend .boton;
     height: 36px;
     border: 0.125rem solid #f1d7d7;
     border-radius: 4%;
-    background-color: $colorPrincipal;
-    color: #ffffff;
 }
 
 .btn__search:hover{
-    background-color: $colorSecundario;
+    background-color: map-get($colores, secundario);
     border-color: #f1d7d7;
     transition: .3s;
 }
@@ -42,7 +41,7 @@
 }
 
 .container__pie{
-    background-color: $colorPrincipal;
+    background-color: map-get($colores, principal);
     box-shadow: 2px 2px 5px; 
 	color: rgb(0, 0, 0);
 	opacity: .9;   
@@ -50,7 +49,7 @@
 
 .red__social{
     font-size: 2rem;
-    color: #f0efea;
+    color: map-get($colores, fondo);
 }
 
 /* Sección: ¿Qué es GuíaMe? */
@@ -60,7 +59,7 @@ section{
     padding-bottom: 2rem;  
     width: auto;
     text-align: center;
-    background-color: #f0efea;
+    background-color: map-get($colores, fondo);
 }
 
 /* .título__seccion: Funciona para los títulos de todas las secciones*/
@@ -68,179 +67,148 @@ section{
 .titulo__seccion h1{  
     font-family: $fuenteTitulos; 
     font-size: 3.9rem;  
-    color: $colorSecundario;  
+    color: map-get($colores, secundario);  
     padding-bottom: 1.6875rem;
-    background-color: #f0efea;
+    background-color: map-get($colores, fondo);
 }
 
 .container__anuncio{
-    background-color: #f0efea;
+    background-color: map-get($colores, fondo);
 }
 
 .container__quees{
-    background-color: #f0efea;
+    background-color: map-get($colores, fondo);
 }
 
 .quees__dos p{
     text-align: center;
     padding-right: 36px;
-    background-color: #f0efea;
+    background-color: map-get($colores, fondo);
 }
 
 .quees__dos img{
     width: 310px;
     border-style: groove; 
-    background-color: #f0efea;     
+    background-color: map-get($colores, fondo);   
 }
 
 .slogan{
     text-align: center;    
     margin-top: 3rem;
-    background-color: #f0efea;
+    background-color: map-get($colores, fondo);
 }
 
 /*Sección: Negocios destacados*/
 
-.destacados__uno{
+// Mixins 
+
+@mixin destacados {
     display: flex;
     align-items: center; 
     padding-top: 30px;
     padding-bottom: 30px;    
-    border-top: solid; color: $colorPrincipal;
-    background-color: #f0efea;
+    border-top: solid; color: map-get($colores, principal);
+    background-color: map-get($colores, fondo);    
 }
 
-.destacados__uno img{
-    border-style: solid; color: $colorSecundario;
-    border-radius: 4%;
-    width: 24%;
-    height: 24%;
-    margin-left: 19px;
-}
-
-.destacados__uno iframe{
-    border-radius: 4%;    
-    max-block-size: 240px;
-    margin-right: 19px     
-}
-
-.destacados__uno p{
-    text-align: center;
-    color: #000;
+.destacados__uno{
+    @include destacados;
 }
 
 .destacados__dos{
-    display: flex;
-    align-items: center; 
-    padding-top: 30px;
-    padding-bottom: 30px;    
-    border-top: solid; color: $colorPrincipal;
-    background-color: #f0efea;
-}
-
-.destacados__dos img{
-    border-style: solid; color: $colorSecundario;
-    border-radius: 4%;
-    width: 24%;
-    height: 24%;
-    margin-left: 19px;    
-}
-
-.destacados__dos iframe{
-    border-radius: 4%;    
-    max-block-size: 240px;
-    margin-right: 19px     
-}
-
-.destacados__dos p{
-    text-align: center;
-    color: #000;
+    @include destacados;
 }
 
 .destacados__tres{
-    display: flex;
-    align-items: center; 
-    padding-top: 30px;
-    padding-bottom: 30px;    
-    border-top: solid; color: $colorPrincipal;
-    background-color: #f0efea;
-}
-
-.destacados__tres img{
-    border-style: solid; color: #000;
-    border-radius: 4%;
-    width: 24%;
-    height: 24%;
-    margin-left: 19px;    
-}
-
-.destacados__tres iframe{
-    border-radius: 4%;    
-    max-block-size: 240px;
-    margin-right: 19px     
-}
-
-.destacados__tres p{
-    text-align: center;
-    color: #000;
+    @include destacados;
 }
 
 .destacados__cuatro{
-    display: flex;
-    align-items: center; 
-    padding-top: 30px;
-    padding-bottom: 30px;    
-    border-top: solid; color: $colorPrincipal;
-    background-color: #f0efea;
-}
-
-.destacados__cuatro img{
-    border-style: solid; color: $colorSecundario;
-    border-radius: 4%;
-    width: 24%;
-    height: 24%;
-    margin-left: 19px;    
-}
-
-.destacados__cuatro iframe{
-    border-radius: 4%;    
-    max-block-size: 240px;
-    margin-right: 19px     
-}
-
-.destacados__cuatro p{
-    text-align: center;
-    color: #000;
+    @include destacados;
 }
 
 .destacados__cinco{
-    display: flex;
-    align-items: center; 
-    padding-top: 30px;
-    padding-bottom: 30px;    
-    border-top: solid; color: $colorPrincipal;
-    border-bottom: solid; color: $colorPrincipal;
-    background-color: #f0efea;
+    @include destacados;
 }
 
-.destacados__cinco img{
-    border-style: solid; color: $colorSecundario;
+@mixin destacados__img {
+    border-style: solid; color: map-get($colores, secundario);
     border-radius: 4%;
     width: 24%;
     height: 24%;
     margin-left: 19px;    
 }
 
-.destacados__cinco iframe{
+.destacados__uno img{
+    @include destacados__img;    
+}
+
+.destacados__dos img{
+    @include destacados__img;    
+}
+
+.destacados__tres img{
+    @include destacados__img;    
+}
+
+.destacados__cuatro img{
+    @include destacados__img;    
+}
+
+.destacados__cinco img{
+    @include destacados__img;    
+}
+
+@mixin destacados__mapa {
     border-radius: 4%;    
     max-block-size: 240px;
-    margin-right: 19px     
+    margin-right: 19px 
+}
+
+.destacados__uno iframe{
+    @include destacados__mapa;        
+}
+
+.destacados__dos iframe{
+    @include destacados__mapa;        
+}
+
+.destacados__tres iframe{
+    @include destacados__mapa;        
+}
+
+.destacados__cuatro iframe{
+    @include destacados__mapa;        
+}
+
+.destacados__cinco iframe{
+    @include destacados__mapa;        
+}
+
+@mixin destacados__texto {
+    text-align: center;
+    color: #000;    
+}
+
+.destacados__uno p{
+    @include destacados__texto;    
+}
+
+.destacados__dos p{
+    @include destacados__texto;    
+}
+
+.destacados__tres p{
+    @include destacados__texto;    
+}
+
+.destacados__cuatro p{
+    @include destacados__texto;    
 }
 
 .destacados__cinco p{
-    text-align: center;
-    color: #000;
-}    
+    @include destacados__texto;    
+}
 
 /* Sección: Anúnciate */
 
@@ -287,7 +255,7 @@ section h2{
 	align-items: center;
 	padding: 20px 100px;
     padding-bottom: 100px;
-    background-color: #f0efea;
+    background-color: map-get($colores, fondo);
 }
 
 .contact__box{	
@@ -323,10 +291,9 @@ textarea{
 }
 
 .btn{
+    @extend .boton;
 	width: 100%;
-	padding: 0.5rem 1rem;
-	background-color: $colorPrincipal;
-	color: #ffffff;
+	padding: 0.5rem 1rem;	
 	font-size: 1.1rem;
 	border: none;
 	outline: none;
@@ -335,7 +302,7 @@ textarea{
 }
 
 .btn:hover{
-    background-color: $colorSecundario;
+    background-color: map-get($colores, secundario);
     color: #ffffff;
 }
 

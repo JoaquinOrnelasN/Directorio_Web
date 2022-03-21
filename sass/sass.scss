@@ -32,7 +32,7 @@
 .btn__search:hover{
     background-color: map-get($colores, secundario);
     border-color: #f1d7d7;
-    transition: .3s;
+    transition: 1s;
 }
 
 .bi {
@@ -213,7 +213,7 @@ section{
 /* Sección: Anúnciate */
 
 section h2{
-    text-align: center;
+    text-align: center; 
 }
 
 .cont__tarjeta{
@@ -273,6 +273,7 @@ section h2{
 
 .right{
 	padding: 25px 40px;
+    width: 40vw;
 }
 
 .field{
@@ -304,6 +305,7 @@ textarea{
 .btn:hover{
     background-color: map-get($colores, secundario);
     color: #ffffff;
+    transition: 1s;
 }
 
 .container__contacto p{
@@ -314,15 +316,29 @@ textarea{
     margin-right: 0px;
     margin-left: 0px;
 }
-
-@media (max-width: 992px){   
+/* Tablet */
+@media (max-width: 992px) and (min-width: 768px){   
     .quees__dos{
         display: flex;
         text-align: center;
     }
+    
+    .contact__box {
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        width: 80vw;
+         img{
+            width: 100%;
+    }
+    }
+    .right{
+        width: 80vw;
+    }
 }
-
-@media (max-width: 768px){
+/* Mobile */
+@media (max-width: 767px) and (min-width: 581px) { 
     footer{
         display: flex;
         flex-direction: column-reverse;               
@@ -362,4 +378,98 @@ textarea{
     .destacados__cinco img{
         width: 70vw;
     }
-}    
+    .card h3 {
+      margin: 0 auto; }
+    .card .btn__info {
+      margin-left: 30px;} 
+    .contact__box {
+      display: flex;
+      flex-direction: column;
+    }
+    .right{
+        width: 80vw;
+    }
+}  
+/* Mobile small */
+@media (max-width: 580px){
+    footer{
+        display: flex;
+        flex-direction: column-reverse;               
+    }  
+    .destacados__uno{
+        display: flex;
+        flex-direction: column;        
+    }
+    .destacados__uno img{
+        width: 70vw;
+    }
+    .destacados__dos{
+        display: flex;
+        flex-direction: column;        
+    }
+    .destacados__dos img{
+        width: 70vw;
+    }
+    .destacados__tres{
+        display: flex;
+        flex-direction: column;        
+    }
+    .destacados__tres img{
+        width: 70vw;
+    }
+    .destacados__cuatro{
+        display: flex;
+        flex-direction: column;        
+    }
+    .destacados__cuatro img{
+        width: 70vw;
+    }
+    .destacados__cinco{
+        display: flex;
+        flex-direction: column;        
+    }
+    .destacados__cinco img{
+        width: 70vw;
+    }
+    .card{
+        width: 300px;
+        height: 220px;
+         img{
+            width: 220px;
+            margin: 0 auto;    
+        }
+         h3{
+            margin: 0 auto;               
+         }
+         .btn__info{
+            margin-left: 54px;
+            }	    
+        }
+    .titulo__seccion h1{  
+            font-size: 2.7rem; 
+    }
+    iframe{
+        width: 100%;
+    }     
+    .cont__tarjeta{
+        margin: 0 auto;
+        margin-bottom: 39px;
+    }
+    section h2{
+        font-size: 1.2rem; 
+    }
+    .contact__box {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;        
+    }
+    .left{
+        width: 100vw;
+         img{
+            width: 100%;
+    }
+    }
+    .right{
+        width: 90vw;
+    }
+}

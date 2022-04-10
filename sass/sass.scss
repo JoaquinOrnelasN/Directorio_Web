@@ -11,6 +11,7 @@
     font-family: $fuenteGeneral;
 }
 
+/* Index */
 .titulo__des{    
     background-color: map-get($colores, secundario);
     margin-top: 13px;     
@@ -81,7 +82,7 @@ section{
 }
 
 .quees__dos p{
-    text-align: center;
+    text-align: right;
     padding-right: 36px;
     background-color: map-get($colores, fondo);
 }
@@ -98,7 +99,7 @@ section{
     background-color: map-get($colores, fondo);
 }
 
-/*Sección: Negocios destacados*/
+/*Sección: Explora*/
 
 // Mixins 
 
@@ -320,9 +321,16 @@ textarea{
 @media (max-width: 992px) and (min-width: 768px){   
     .quees__dos{
         display: flex;
+        text-align: center;        
+        flex-direction: row-reverse;
+        justify-content: center;    
+        }  
+    .quees__dos p{
         text-align: center;
-    }
-    
+        }  
+    .container__anuncio{
+        padding-left: 80px;
+    }          
     .contact__box {
         display: flex;
         flex-direction: column;
@@ -342,6 +350,9 @@ textarea{
     footer{
         display: flex;
         flex-direction: column-reverse;               
+    }  
+    .quees__dos p{
+        text-align: center;
     }  
     .destacados__uno{
         display: flex;
@@ -379,22 +390,35 @@ textarea{
         width: 70vw;
     }
     .card h3 {
-      margin: 0 auto; }
+        margin: 0 auto; 
+    }
     .card .btn__info {
-      margin-left: 30px;} 
+        margin-left: 30px;
+    } 
     .contact__box {
-      display: flex;
-      flex-direction: column;
+        display: flex;
+        flex-direction: column;
     }
     .right{
         width: 80vw;
     }
+    .quees__dos{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;    
+    }
 }  
 /* Mobile small */
-@media (max-width: 580px){
+@media (max-width: 580px){    
     footer{
         display: flex;
         flex-direction: column-reverse;               
+    }  
+    .quees__dos{
+        margin-left: 24px;
+    }
+    .quees__dos p{
+        text-align: center;
     }  
     .destacados__uno{
         display: flex;

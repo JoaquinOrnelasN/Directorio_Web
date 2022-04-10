@@ -12,6 +12,9 @@
   opacity: .9; }
   .navbar .container {
     background-color: #e6073f; }
+    .navbar .container img {
+      width: 4%;
+      margin-right: 9px; }
     .navbar .container .navbar-brand {
       font-size: 36px;
       font-family: 'Yesteryear', sans-serif;
@@ -66,18 +69,7 @@
   border: 3px solid #4c3f54; }
   .card:hover {
     border-color: #e6073f;
-    transition: 1s;
-    animation: redes 1s; }
-
-@keyframes redes {
-  20% {
-    transform: translatex(0); }
-  40% {
-    transform: translatex(4px); }
-  60% {
-    transform: translatex(0); }
-  80% {
-    transform: translatex(-4px); } }
+    transition: 1s; }
   .card img {
     width: auto;
     height: 120px;
@@ -95,7 +87,18 @@
     border: none; }
     .card .btn__info:hover {
       background-color: #4c3f54;
-      transition: 1s; }
+      transition: 1.7s;
+      animation: destacados 1.7s; }
+
+@keyframes destacados {
+  20% {
+    font-size: 1rem; }
+  40% {
+    font-size: 0.7rem; }
+  60% {
+    font-size: 1rem; }
+  80% {
+    font-size: 00.7rem; } }
 
 * {
   margin: 0;
@@ -103,6 +106,7 @@
   text-decoration: none;
   font-family: "Open Sans", sans-serif; }
 
+/* Index */
 .titulo__des {
   background-color: #4c3f54;
   margin-top: 13px; }
@@ -159,7 +163,7 @@ section {
   background-color: #f0efea; }
 
 .quees__dos p {
-  text-align: center;
+  text-align: right;
   padding-right: 36px;
   background-color: #f0efea; }
 
@@ -173,7 +177,7 @@ section {
   margin-top: 3rem;
   background-color: #f0efea; }
 
-/*Sección: Negocios destacados*/
+/*Sección: Explora*/
 .destacados__uno {
   display: flex;
   align-items: center;
@@ -398,7 +402,13 @@ textarea {
 @media (max-width: 992px) and (min-width: 768px) {
   .quees__dos {
     display: flex;
+    text-align: center;
+    flex-direction: row-reverse;
+    justify-content: center; }
+  .quees__dos p {
     text-align: center; }
+  .container__anuncio {
+    padding-left: 80px; }
   .contact__box {
     display: flex;
     flex-direction: column; }
@@ -414,6 +424,8 @@ textarea {
   footer {
     display: flex;
     flex-direction: column-reverse; }
+  .quees__dos p {
+    text-align: center; }
   .destacados__uno {
     display: flex;
     flex-direction: column; }
@@ -447,13 +459,21 @@ textarea {
     display: flex;
     flex-direction: column; }
   .right {
-    width: 80vw; } }
+    width: 80vw; }
+  .quees__dos {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center; } }
 
 /* Mobile small */
 @media (max-width: 580px) {
   footer {
     display: flex;
     flex-direction: column-reverse; }
+  .quees__dos {
+    margin-left: 24px; }
+  .quees__dos p {
+    text-align: center; }
   .destacados__uno {
     display: flex;
     flex-direction: column; }

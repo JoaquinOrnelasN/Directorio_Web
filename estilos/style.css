@@ -69,22 +69,7 @@
   border: 3px solid #4c3f54; }
   .card:hover {
     border-color: #e6073f;
-<<<<<<< HEAD
-    transition: 1s;
-    animation: redes 1s; }
-
-@keyframes redes {
-  20% {
-    transform: translatex(0); }
-  40% {
-    transform: translatex(4px); }
-  60% {
-    transform: translatex(0); }
-  80% {
-    transform: translatex(-4px); } }
-=======
     transition: 1s; }
->>>>>>> entrega_final
   .card img {
     width: auto;
     height: 120px;
@@ -102,9 +87,6 @@
     border: none; }
     .card .btn__info:hover {
       background-color: #4c3f54;
-<<<<<<< HEAD
-      transition: 1s; }
-=======
       transition: 1.7s;
       animation: destacados 1.7s; }
 
@@ -117,7 +99,6 @@
     font-size: 1rem; }
   80% {
     font-size: 00.7rem; } }
->>>>>>> entrega_final
 
 * {
   margin: 0;
@@ -421,9 +402,6 @@ textarea {
 @media (max-width: 992px) and (min-width: 768px) {
   .quees__dos {
     display: flex;
-<<<<<<< HEAD
-    text-align: center; }
-=======
     text-align: center;
     flex-direction: row-reverse;
     justify-content: center; }
@@ -431,7 +409,15 @@ textarea {
     text-align: center; }
   .container__anuncio {
     padding-left: 80px; }
->>>>>>> entrega_final
+  .contact__box {
+    display: flex;
+    flex-direction: column; }
+  .left {
+    width: 80vw; }
+    .left img {
+      width: 100%; }
+  .right {
+    width: 80vw; }
   .contact__box {
     display: flex;
     flex-direction: column; }
@@ -482,28 +468,21 @@ textarea {
     display: flex;
     flex-direction: column; }
   .right {
-<<<<<<< HEAD
-    width: 80vw; } }
-=======
     width: 80vw; }
   .quees__dos {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center; } }
->>>>>>> entrega_final
 
 /* Mobile small */
 @media (max-width: 580px) {
   footer {
     display: flex;
     flex-direction: column-reverse; }
-<<<<<<< HEAD
-=======
   .quees__dos {
     margin-left: 24px; }
   .quees__dos p {
     text-align: center; }
->>>>>>> entrega_final
   .destacados__uno {
     display: flex;
     flex-direction: column; }

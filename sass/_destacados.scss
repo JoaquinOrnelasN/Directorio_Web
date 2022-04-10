@@ -2,8 +2,8 @@
     height: 16rem;    
     border: 3px solid map-get($colores, secundario);
     &:hover{border-color: map-get($colores, principal);
-             transition: 1s;              
-    }
+             transition: 1s;           
+    } 
      img{
         width: auto;
         height: 120px;
@@ -23,9 +23,8 @@
         border: none;        
         &:hover{
             background-color: #4c3f54;
-            transition: 1s;
             transition: 1.7s;
-            // Animación
+            // Animación                      
             animation: destacados 1.7s;
             @keyframes destacados{
                 20%{font-size: 1rem;            
@@ -37,6 +36,7 @@
                 80%{font-size: 00.7rem;         
                 }  
             }
+
         }	    
     }
 }

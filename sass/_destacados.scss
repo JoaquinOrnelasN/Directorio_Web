@@ -1,5 +1,6 @@
 .card{
     height: 16rem;  
+<<<<<<< HEAD
     border: 3px solid #4c3f54;
     &:hover{border-color: #e6073f;
              transition: 1s;
@@ -15,6 +16,11 @@
                 80%{transform: translatex(-4px);         
                 }  
             }
+=======
+    border: 3px solid map-get($colores, secundario);
+    &:hover{border-color: map-get($colores, principal);
+             transition: 1s;           
+>>>>>>> entrega_final
         }
      img{
         width: auto;
@@ -35,7 +41,23 @@
         border: none;        
         &:hover{
             background-color: #4c3f54;
+<<<<<<< HEAD
             transition: 1s;
+=======
+            transition: 1.7s;
+            // Animación
+            animation: destacados 1.7s;
+             @keyframes destacados{
+                20%{font-size: 1rem;            
+                }
+                40%{font-size: 0.7rem;         
+                }
+                60%{font-size: 1rem;         
+                }   
+                80%{font-size: 00.7rem;         
+                }  
+            }
+>>>>>>> entrega_final
         }	    
     }
 }

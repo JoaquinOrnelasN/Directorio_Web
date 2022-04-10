@@ -11,6 +11,7 @@
     font-family: $fuenteGeneral;
 }
 
+/* Index */
 .titulo__des{    
     background-color: map-get($colores, secundario);
     margin-top: 13px;     
@@ -81,7 +82,7 @@ section{
 }
 
 .quees__dos p{
-    text-align: center;
+    text-align: right;
     padding-right: 36px;
     background-color: map-get($colores, fondo);
 }
@@ -98,7 +99,7 @@ section{
     background-color: map-get($colores, fondo);
 }
 
-/*Sección: Negocios destacados*/
+/*Sección: Explora*/
 
 // Mixins 
 
@@ -320,7 +321,28 @@ textarea{
 @media (max-width: 992px) and (min-width: 768px){   
     .quees__dos{
         display: flex;
+        text-align: center;        
+        flex-direction: row-reverse;
+        justify-content: center;    
+        }  
+    .quees__dos p{
         text-align: center;
+        }  
+    .container__anuncio{
+        padding-left: 80px;
+    }          
+    .contact__box {
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        width: 80vw;
+         img{
+            width: 100%;
+    }
+    }
+    .right{
+        width: 80vw;
     }
     
     .contact__box {
@@ -342,6 +364,9 @@ textarea{
     footer{
         display: flex;
         flex-direction: column-reverse;               
+    }  
+    .quees__dos p{
+        text-align: center;
     }  
     .destacados__uno{
         display: flex;
@@ -379,23 +404,54 @@ textarea{
         width: 70vw;
     }
     .card h3 {
+<<<<<<< HEAD
       margin: 0 auto; }
     .card .btn__info {
       margin-left: 30px;} 
     .contact__box {
       display: flex;
       flex-direction: column;
+=======
+        margin: 0 auto; 
+    }
+    .card .btn__info {
+        margin-left: 30px;
+    } 
+    .contact__box {
+        display: flex;
+        flex-direction: column;
+>>>>>>> entrega_final
     }
     .right{
         width: 80vw;
     }
+<<<<<<< HEAD
 }  
 /* Mobile small */
 @media (max-width: 580px){
+=======
+    .quees__dos{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;    
+    }
+}  
+/* Mobile small */
+@media (max-width: 580px){    
+>>>>>>> entrega_final
     footer{
         display: flex;
         flex-direction: column-reverse;               
     }  
+<<<<<<< HEAD
+=======
+    .quees__dos{
+        margin-left: 24px;
+    }
+    .quees__dos p{
+        text-align: center;
+    }  
+>>>>>>> entrega_final
     .destacados__uno{
         display: flex;
         flex-direction: column;        
